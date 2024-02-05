@@ -36,11 +36,11 @@ PASSWORD=your_mongodb_password
 4. npm start
 
 ### Usage
-Access the application in your web browser.
+-Access the application in your web browser.
 
-Enter a full URL in the provided input field.
+-Enter a full URL in the provided input field.
 
-Click the "Shorten" button to generate a shortened URL.
+-Click the "Shorten" button to generate a shortened URL.
 
-Copy and share the shortened URL.
+-Copy and share the shortened URL.
    
