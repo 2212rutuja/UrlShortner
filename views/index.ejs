@@ -23,7 +23,8 @@
 
             <div class="input-group mb-4">
                 <label for="fullUrl" class="visually-hidden">URL</label>
-                <input required placeholder="Url" type="url" name="fullUrl" id="fullUrl" class="form-control col me-3 mb-3">
+                <input required placeholder="Url" type="url" name="fullUrl" id="fullUrl"
+                    class="form-control col me-3 mb-3">
                 <button class="btn btn-primary rounded mb-3" type="submit">Shorten URL</button>
             </div>
 
@@ -31,12 +32,12 @@
 
         <div class="table-responsive">
             <table class="table table-striped">
-                <thead >
+                <thead>
                     <tr>
                         <th class="bg-warning">Full Url</th>
                         <th class="bg-warning">Short Url</th>
                         <th class="bg-warning">Clicks</th>
-                        <th class="bg-warning">Delete</th>
+                        <th class="bg-warning">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -51,6 +52,9 @@
                             <td>
                                 <%= shortUrl.clicks %>
                             </td>
+                            <td>
+                                <button class="btn btn-danger" onclick="deleteRow(this)">Delete</button>
+                            </td>
                         </tr>
 
                         <% }) %>
@@ -64,5 +68,11 @@
 
 
 </body>
+<script>
+    function deleteRow(button) {
+        var row = button.closest('tr');
+        row.remove();
+    }
+</script>
 
 </html>
