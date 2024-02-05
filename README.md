@@ -29,12 +29,13 @@ cd UrlShortner
 3. Create a .env file in the project root with the following content:
 
 
-USERNAME=your_mongodb_username
+USERNAME=your_mongodb_username 
+
 PASSWORD=your_mongodb_password
 
 4. npm start
 
-Usage
+### Usage
 Access the application in your web browser.
 
 Enter a full URL in the provided input field.
